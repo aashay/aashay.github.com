@@ -13,3 +13,12 @@ h1, h2{
     font-family: 'Cuprum', arial, serif;
     letter-spacing:1px;
 }
+.box {
+    background:#ddd;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+#photo{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
