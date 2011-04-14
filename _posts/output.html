@@ -1,0 +1,30 @@
+<hr />
+
+<p>layout: post</p>
+
+<h2 id="title:mongooseisapain.">title: Mongoose is a pain.</h2>
+
+<p>I&#8217;ve been working on a project and I&#8217;m using the <a href="http://mongoosejs.com/">Mongoose</a> object modeling tool to communicate with <a href="http://mongodb.com">MongoDB</a>.  </p>
+
+<p>I have to say, while it certainly has its benefits, it&#8217;s kind of a pain in the ass, especially for the following reasons:
+1. Terribly organized documentation.  Go take a look at the website and the API ref if you don&#8217;t believe me.
+2. General community inertia.  I&#8217;ve seen at least half a dozen Google Group messages that reference errors I&#8217;m having with no reasonable responses. 
+3. Useless error messages like this:</p>
+
+<pre><code>/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/types/array.js:62
+ var cast = this._schema.caster.prototype.cast
+                                 ^
+TypeError: Cannot read property 'prototype' of undefined
+    at Array._cast (/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/types/array.js:62:33)
+    at Object.map (native)
+    at Array.&lt;anonymous&gt; (/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/types/array.js:129:36)
+    at Promise.&lt;anonymous&gt; (/Users/aashay/Dropbox/Projects/anonymouse/server.js:214:33)
+    at Promise.&lt;anonymous&gt; (/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/promise.js:120:8)
+    at Promise.&lt;anonymous&gt; (events:27:15)
+    at Promise.emit (/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/promise.js:57:38)
+    at Promise.complete (/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/promise.js:68:20)
+    at complete (/usr/local/lib/node/.npm/mongoose/1.1.5/package/lib/mongoose/model.js:73:13)
+    at /usr/local/lib/node/.npm/mongoose/1.1.5/package/support/node-mongodb-native/lib/mongodb/collection.js:169:32
+</code></pre>
+
+<p>I&#8217;m not entirely sure what this is trying to tell me, but I think </p>

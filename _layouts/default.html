@@ -4,6 +4,12 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width = 750">
+    <script src="http://yandex.st/highlightjs/5.16/highlight.min.js"></script>
+    <script> 
+      hljs.tabReplace = '    ';
+      hljs.initHighlightingOnLoad();
+    </script>
+
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cuprum:regular" type="text/css">
     <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection"/>
     <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"/>
@@ -14,6 +20,9 @@
     <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/blueprint/plugins/link-icons/screen.css" type="text/css" media="screen, projection">  
     <link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen, projection">  
+
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/5.16/styles/sunburst.min.css" type="text/css">    
     
     <title>{{ page.title }}</title>
     </head>
@@ -55,7 +64,7 @@
             <div class="box clearfix clear minibody">
               <h4 class="">Here are my last 5 posts.</h4>
               <ul>                              
-              {% for post in site.posts limit:5 %}
+              {% for post in site.posts reversed limit:5 %}
                 <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %d, %Y"  }}</li>
               {% endfor %}
               </ul>

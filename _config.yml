@@ -4,3 +4,4 @@
 :name: aashaydesai.github.com
 pygments: true
 auto: true
+markdown: rdiscount
