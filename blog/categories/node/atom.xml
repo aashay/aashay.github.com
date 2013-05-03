@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Node | Aashay.com]]></title>
+  <link href="http://aashay.com/blog/categories/node/atom.xml" rel="self"/>
+  <link href="http://aashay.com/"/>
+  <updated>2013-05-03T01:51:54-07:00</updated>
+  <id>http://aashay.com/</id>
+  <author>
+    <name><![CDATA[Aashay Desai]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A few things I learned at NodeConf Summer Camp]]></title>
+    <link href="http://aashay.com/blog/2012/09/06/things-i-learned-at-nodeconf-summer-camp/"/>
+    <updated>2012-09-06T12:33:00-07:00</updated>
+    <id>http://aashay.com/blog/2012/09/06/things-i-learned-at-nodeconf-summer-camp</id>
+    <content type="html"><![CDATA[<p>I recently had the pleasure of attending <a href="http://www.nodeconf.com/">NodeConf Summercamp 2012</a> and I wanted to quickly jot down some thoughts about stuff I learned, both Node-related and not.</p>
+
+<p>In case you're wondering what the experience itself was like, <a href="https://github.com/creationix">Tim Caswell aka Creationix</a> wrote a <a href="https://c9.io/site/blog/2012/09/reflections-on-nodeconf-summer-camp-2012/">blog post on the cloud9 blog</a> that recaps some of the day-to-day activities.</p>
+
+<p>So here are some of my takeaways in no particular order:</p>
+
+<ul>
+<li>Lots of people are successfully using Node in production, including <a href="http://voxer.com/">Voxer</a>, <a href="https://www.uber.com/">Uber</a>, and <a href="https://www.yammer.com/">Yammer</a>. The Node community wants to encourage more blog posts about both success stories and battles with bugs (and more importantly, follow-ups to both).</li>
+<li>Node is being used for lots of things other than web apps such as non-http servers and even robots!</li>
+<li>Node Streams are pretty awesome <a href="http://maxogden.com/node-streams">and this is why</a>.</li>
+<li><a href="http://nodejs.org/docs/latest/api/domain.html">Node Domains</a> are a fairly new feature but also seem pretty useful.</li>
+<li>Crossing the JavaScript to C boundary is expensive, so there was a lot of talk about avoiding compiled dependencies.  I'd still like to learn a lot more about this because I found it counterintuitive.  For example, <a href="https://github.com/mranney/node_redis">node_redis</a> claims to perform a lot better with hiredis, which was one of the compiled deps that folks mentioned not to use.</li>
+<li>HTTPS (SSL/TLS) isn't very performant right now (TLS handshakes happen in the main event loop and happen a lot more than necessary), so it's probably better to use something like <a href="http://nginx.org/en/">nginx</a> or <a href="https://github.com/bumptech/stud">stud</a> for SSL termination. They're working on it!</li>
+<li>People in the NodeJS community are very warm, welcoming and pretty darn funny.</li>
+<li>Unless you want to smell like a wood-fired barbeque, bring a fireplace-specific hoodie and a rest-of-the-day hoodie. (I'm not a very outdoorsy person so I had to figure this out on my own).</li>
+</ul>
+
+
+<p>I had a fantastic time at NodeConf Summercamp and I'm looking forward to going again next year.  Thanks to <a href="https://github.com/mikeal">Mikeal Rogers</a> and the rest of the organizing crew for making it such a great experience!</p>
+]]></content>
+  </entry>
+  
+</feed>
