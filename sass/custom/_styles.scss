@@ -1,0 +1,104 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+//Most of this was ripped off from http://melandri.net/2012/02/14/octopress-theme-customization/
+
+
+/* ----- main layout ----- */
+
+body > div { background-image: none; }
+
+body > div > div { background-image: none; }
+
+
+/* ----- header ----- */
+
+
+body > header{
+  background: none;
+}
+
+body > nav {
+  padding-top: .15em;
+  padding-bottom: .15em;
+}
+
+body > nav a{
+  line-height: 1.4em;
+}
+
+body > nav form .search{
+  padding: .2em .3em;
+}
+
+
+
+/* ----- Footer ----- */
+
+
+body > footer{
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius:0;
+  margin-bottom: 0;
+}
+
+
+/* ----- 404 ----- */
+
+
+.notfound404 article{
+  margin-left: 0 !important;
+}
+
+
+/* ----- Media queries ----- */
+
+
+@media only screen and (min-width: 550px) {
+
+  body > footer { margin-bottom: 3em; }
+}
+
+@media only screen and (min-width: 1040px) {
+
+  body > nav {
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    border-radius:0.4em;
+    margin-bottom: 2em;
+  }
+
+  body > footer{
+      -moz-border-radius-bottomleft: 0.4em;
+      -moz-border-radius-bottomright: 0.4em;
+      -webkit-border-radius: 0 0 0.4em 0.4em;
+      border-radius: 0 0 0.4em 0.4em;
+  }
+
+  #main{
+      -moz-border-radius-topleft: 0.4em;
+      -moz-border-radius-topright: 0.4em;
+      -webkit-border-radius: 0.4em 0.4em 0 0;
+      border-radius: 0.4em 0.4em 0 0;
+  }
+
+  #content{
+      -moz-border-radius-topleft: 0.4em;
+      -webkit-border-radius: 0.4em 0 0 0;
+      border-radius: 0.4em 0 0 0;
+  }
+
+  #content .blog-index a[rel="full-article"]{
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+  }
+}
+
+
+/* -------My own bs ---------- */
+
+li {
+    margin-bottom: 10px;
+}
