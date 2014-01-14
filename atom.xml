@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Aashay.com]]></title>
+  <link href="http://aashay.com/atom.xml" rel="self"/>
+  <link href="http://aashay.com/"/>
+  <updated>2013-05-03T02:04:34-07:00</updated>
+  <id>http://aashay.com/</id>
+  <author>
+    <name><![CDATA[Aashay Desai]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A few things I learned at NodeConf Summer Camp]]></title>
+    <link href="http://aashay.com/blog/2012/09/06/things-i-learned-at-nodeconf-summer-camp/"/>
+    <updated>2012-09-06T12:33:00-07:00</updated>
+    <id>http://aashay.com/blog/2012/09/06/things-i-learned-at-nodeconf-summer-camp</id>
+    <content type="html"><![CDATA[<p>I recently had the pleasure of attending <a href="http://www.nodeconf.com/">NodeConf Summercamp 2012</a> and I wanted to quickly jot down some thoughts about stuff I learned, both Node-related and not.</p>
+
+<p>In case you&#8217;re wondering what the experience itself was like, <a href="https://github.com/creationix">Tim Caswell aka Creationix</a> wrote a <a href="https://c9.io/site/blog/2012/09/reflections-on-nodeconf-summer-camp-2012/">blog post on the cloud9 blog</a> that recaps some of the day-to-day activities.</p>
+
+<p>So here are some of my takeaways in no particular order:</p>
+
+<ul>
+<li>Lots of people are successfully using Node in production, including <a href="http://voxer.com/">Voxer</a>, <a href="https://www.uber.com/">Uber</a>, and <a href="https://www.yammer.com/">Yammer</a>. The Node community wants to encourage more blog posts about both success stories and battles with bugs (and more importantly, follow-ups to both).</li>
+<li>Node is being used for lots of things other than web apps such as non-http servers and even robots!</li>
+<li>Node Streams are pretty awesome <a href="http://maxogden.com/node-streams">and this is why</a>.</li>
+<li><a href="http://nodejs.org/docs/latest/api/domain.html">Node Domains</a> are a fairly new feature but also seem pretty useful.</li>
+<li>Crossing the JavaScript to C boundary is expensive, so there was a lot of talk about avoiding compiled dependencies.  I&#8217;d still like to learn a lot more about this because I found it counterintuitive.  For example, <a href="https://github.com/mranney/node_redis">node_redis</a> claims to perform a lot better with hiredis, which was one of the compiled deps that folks mentioned not to use.</li>
+<li>HTTPS (SSL/TLS) isn&#8217;t very performant right now (TLS handshakes happen in the main event loop and happen a lot more than necessary), so it&#8217;s probably better to use something like <a href="http://nginx.org/en/">nginx</a> or <a href="https://github.com/bumptech/stud">stud</a> for SSL termination. They&#8217;re working on it!</li>
+<li>People in the NodeJS community are very warm, welcoming and pretty darn funny.</li>
+<li>Unless you want to smell like a wood-fired barbeque, bring a fireplace-specific hoodie and a rest-of-the-day hoodie. (I&#8217;m not a very outdoorsy person so I had to figure this out on my own).</li>
+</ul>
+
+
+<p>I had a fantastic time at NodeConf Summercamp and I&#8217;m looking forward to going again next year.  Thanks to <a href="https://github.com/mikeal">Mikeal Rogers</a> and the rest of the organizing crew for making it such a great experience!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Year's Resolutions 2012]]></title>
+    <link href="http://aashay.com/blog/2012/01/01/new-year-s-resolutions-2012/"/>
+    <updated>2012-01-01T00:00:00-08:00</updated>
+    <id>http://aashay.com/blog/2012/01/01/new-year-s-resolutions-2012</id>
+    <content type="html"><![CDATA[<p><em>Once again I&#8217;m posting my New Year&#8217;s Resolutions somewhere public (my blog) so that I&#8217;m more likely to follow them. My resolutions this year are the same as last year&#8217;s with one noteable exception.</em></p>
+
+<!-- more -->
+
+
+<p>Last year I made some <a href="http://aashay.com/Kaizen/Resolutions/2010/09/29/new-year-s-resolutions-2011.html">pretty basic resolutions</a>. I made great progress on some and not-so-great progress on others, but this year there&#8217;s very little different I want to do, with one noteable exception.</p>
+
+<p>To recap:</p>
+
+<ul>
+<li>Get Healthy (work out)</li>
+<li>Keep better tabs on my finances</li>
+<li>Write (I fail at this one every year)</li>
+<li>Kaizen (general self-improvement)</li>
+</ul>
+
+
+<p>If there&#8217;s one thing I&#8217;d like to add to the list:</p>
+
+<ul>
+<li>Balance.</li>
+</ul>
+
+
+<p>I&#8217;ve fallen into the habit of spending a lot of time working on one subset of skills and talents that I tend to let others fall behind.  Specifically, I&#8217;d like to tap back into my creative side (vis a vis music) while I continue to improve my hacking chops.  Ideally, this means taking both sides to an extreme.</p>
+
+<p>I&#8217;d like to write at least <em>one</em> song this year and start at least <em>one</em> open-source project (hopefully something that develops as a result of my work with <a href="http://anonymou.se">AnonyMou.se</a>)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hack For Change]]></title>
+    <link href="http://aashay.com/blog/2011/06/24/Hack-For-Change/"/>
+    <updated>2011-06-24T00:00:00-07:00</updated>
+    <id>http://aashay.com/blog/2011/06/24/Hack-For-Change</id>
+    <content type="html"><![CDATA[<p><em>Last weekend, I participated in <a href="http://change.org">Change.org</a> <a href="http://www.hackforchange.com">HackForChange</a> hackathon. We had 24 hours to design and build an app that could help change the world, and <a href="http://www.symbianone.com/content/view/7402/">we ended up winning 2nd place</a>! I wanted to take this opportunity to discuss my experience, and announce what lies ahead for our project, <a href="http://anonymou.se">AnonyMouse</a>.</em></p>
+
+<!-- more -->
+
+
+<h2>A Quick Disclaimer</h2>
+
+<p>For those of you who may not be in the know, a &#8221;<a href="http://en.wikipedia.org/wiki/Hackathon">Hackathon</a>&#8221; has little to do with breaking into computer systems (do we still call this &#8220;cracking?&#8221;) and my app AnonyMouse has no relation to the <a href="http://en.wikipedia.org/wiki/Anonymous_(group">Anonymous collective</a>).  The title of the app comes from the fact that most of the users will be anonymous.</p>
+
+<h2>On Hackathons</h2>
+
+<p>I&#8217;ve participated in a hackathon-type event before, but not one of this scale or caliber. I was on a team of three including myself, my colleague <a href="http://twitter.com/aaronmoy">Aaron Moy</a>, and a great designer we met named <a href="http://dogmo.org/">Eliza Wee</a>. Aaron put together the presentation and helped articulate the vision and user experience, Eliza created the front-end pages in HTML5 and CSS3, and I put together a backend. In 24 hours, we managed to put together a working demo and impress the judges (including Craig Newmark, the founder of Craigslist; Chris Bishko, investment director for Omidyar Network; and Tasneem Raja, <em>The Bay Citizen</em>’s Web producer) enough to claim the second place prize. The event took place at Change.org&#8217;s headquarters and I must say, was very well organized. They fed us healthy food (Mmm quinoa) and gave us all of the resources we needed to get up and running fast, including presentations on various APIs including the <a href="http://twilio.com">Twilio</a> API, which we rely on. With the exception of a WiFi glitch early on Saturday night, everything ran smoothly.</p>
+
+<h2>The Back Story</h2>
+
+<p>Several months ago I met Aaron through a friend of mine and he discussed his vision for building a website for closeted LGBT individuals who are looking for a more personal mentoring experience than the existing solutions today (i.e. hotlines).  He explained his coming-out experience to me and his ideas for why such a website should exist. At the time, I was looking for an interesting hacking project to work on, and while I wasn’t a part of the LGBT community, I sympathized with Aaron’s experience and thought that his idea would make for an interesting side project.  So we got to work on a prototype.</p>
+
+<p><span class='pullquote-right' data-pullquote='I began to understand what Aaron’s experience was like, and how terrible the situation is with respect to LGBT bullying.  And so, I no longer just had sympathy for the cause.  I had true empathy for the cause.'>
+After spending some time with the project and having a few more discussions, something really hit me hard.  This wasn’t just an idea that could benefit the LGBT community.  This was something that could benefit <em>anyone</em> looking for some personalized help, but preferred to stay anonymous.  I began to understand what Aaron’s experience was like, and how terrible the situation is with respect to LGBT bullying.  And so, I no longer just had sympathy for the cause.  I had true empathy for the cause.
+</span></p>
+
+<p>I know what it’s like to be bullied for being different.  I remembered my own experiences growing up being small, skinny, nerdy, and ethnic in a relatively non-diverse community.  Bullying is inexcusable and can cause far more damage than people realize, particularly (but not exclusively) for younger people.</p>
+
+<p>When I heard about HackForChange, I immediately jumped at the opportunity.  While we had some basic prototyping done, I felt like we needed something to help build momentum around our project, and this was the perfect opportunity.</p>
+
+<h2>The Hack Story</h2>
+
+<p><em>The following section is going to get pretty technical, so if it’s not your cup of tea, feel free to skip down to “The Takeaways.”  If it is, though, please don’t hesitate to post comments below (via Disqus).</em></p>
+
+<p>The rules for the Hackathon were pretty basic.  Spend 24 hours and build a web or mobile app to help advance positive change.  Don’t use any existing code (unless it’s a publicly available library or API).  Hacking starts at noon on Saturday and ends with a final commit being pushed to GitHub by noon on Sunday.</p>
+
+<p>Easy enough.  I was a bit bummed about the “no existing code” rule but this was a contest with a $10,000 prize pool, so fair is fair.  Our team sat down to rethink the overall experience and develop a totally new and “parallel” app to our existing prototype.</p>
+
+<p>I decided to try out the Twilio API and create an SMS-based interface for mentees to talk to mentors (who would use a simple web chat interface back).  Twilio was an official sponsor of the hackathon and <a href="http://twitter.com/johndbritton">John Britton</a>, Developer Evangelist at Twilio, gave us a great demo of the API and generously provided us with a small account to get started.  The Twilio API was the only “unknown” in my stack of choice so the first thing I did was sit down to learn it.</p>
+
+<p>Speaking of my stack (and tools) of choice:</p>
+
+<ul>
+<li><a href="http://www.mongodb.org">MongoDB</a>:  Honestly, I probably could’ve used a flat file for the demo that we did end up presenting.  However, I had a little experience with Mongo already (I used it in the prototype) so again, it was a question of speed.  I used MongoLab’s add-on for Heroku.</li>
+<li><a href="http://nodejs.org/">Node.JS</a> + <a href="http://socket.io">Socket.IO</a> (via <a href="http://nowjs.com">NowJS</a>):  Since the largest component of our app is a real-time communication tool, it only made sense to do something that does real-time pretty well (for those of you unfamiliar with NowJS, I’d suggest checking it out.  It provides a pretty useful abstraction over Socket.IO, although its utility for my upcoming purposes may be overshadowed by the new Socket.IO 0.7).  Sure, I could’ve used EventMachine with Ruby, or even Twisted with Python, but I&#8217;m unfortunately not experienced enough with either to be dangerous, and JavaScript was the only “web” language that I was comfortable with (I use Java at my day job, but attempting to crank out a real-time web app in Java at a hackathon would&#8217;ve been a fool&#8217;s errand for me).  I’ve enjoyed playing with both Ruby and Python, but at a 24 hour hackathon, I needed to use something that I was already fast with.  Makes sense, right?</li>
+<li><a href="http://expressjs.com/">ExpressJS</a>:  This seems to be the web framework of choice for Node developers (and rightly so. It&#8217;s a great, lightweight framework).  Sure, if I was using Ruby on Rails or some other code generating solutions, I would’ve had a <em>lot</em> of features pounded out in a shorter amount of time, but as I’ll discuss below, this would’ve been overkill (and would’ve also required me to know Rails.  I’ve played with Sinatra before, and Express is very Sinatra-like, so it felt natural).</li>
+<li><a href="http://mootools.net/">MooTools</a>:  In retrospect, <a href="http://jquery.com/">jQuery</a> would’ve worked too.  I’ve been playing around with MooTools (I enjoy the OO aspect of it), but for the quickie UI code that I ended up throwing together, some simple DOM manipulation would’ve been just fine.  For the longer term, though, MooTools wins my vote (and I think I’m finally over the initial learning curve).</li>
+<li><a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a> + <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3">CSS3</a>:  Eliza was a pro at cranking out a standards-compliant web front-end.  We it up on an iPhone browser and it worked just fine.</li>
+<li><a href="http://heroku.com">Heroku</a>: They were a sponsor of the hackathon and graciously provided us with a month of free hosting.  For those of you who have never built an app on Heroku, you’re missing out on all sorts of warm tingly feelings that come from deploying your app by simply doing a “git push heroku master” in your command line.  I mean, damn.  Talk about rapid deployment.  (FULL DISCLOSURE:  I work at Salesforce.com and yes, they own Heroku, and no, I don’t get any fancy treatment because of this.  <em>Everyone</em> at the hackathon got a free month of Heroku hosting).</li>
+<li><a href="http://git-scm.com/">Git</a>/<a href="http://github.com">GitHub</a>:  I probably don’t need to explain this one (GitHub was also a sponsor) but git is (and will be) my VCS of choice, and GitHub is an absolute <em>pleasure</em> to work with.  Also, all of our code had to be up on GitHub anyway, so that worked out well.</li>
+</ul>
+
+
+<p>Anyways, where was I?  Oh right, the Twilio API.  I initially attempted to use the <a href="https://github.com/sjwalter/node-twilio/wiki">twilio library in the npm repository</a>, but found it to be a bit cumbersome, in the sense that it actually needs to spin up <em>another</em> web server (on port 31337, yay nerd jokes), and I couldn’t find an easy way to make another app server running on another port on Heroku (I’m not saying it’s impossible, I’m saying that I didn’t feel like spending more time on it than I needed to).  So I gave up on using a library and settled for good ol’ fashioned REST (via <a href="https://github.com/danwrong/restler">Restler</a>).</p>
+
+<p>Several hours later, I had a working API and a crappy prototype page that displayed inbound SMS messages in real time.  Call it a SMS log, if you will.  It was pretty snappy and was probably our first big milestone.  I decided to take a quick break and get some food and revel in my small but important victory.</p>
+
+<p>Things started to get pretty hairy from then on.  The stress kicked in and contributed to wearing my brain out.  I compensated with caffeine (bad idea: caffeine makes you need to pee a lot, which requires you to get up a lot, which is disruptive) and tried to bang out as much code as I could.  I started getting a little bit disorganized with what features I really <em>needed</em> to build vs. which features I <em>thought</em> I had to build, so I ended up with a lot of “what if” scenarios that translated to unnecessary code.</p>
+
+<p>I say “unnecessary” with a bit of caution here, however.  Had this been any other night of pure app coding, it would’ve been okay to write a bunch of stuff for later use.  After all, we have a vision and we want to see it through.  The key takeaway here is to remember that if you’re at a hackathon building an idea you’ve been thinking about, <em>stop thinking about the idea as you know it.</em>  In retrospect, all I needed to do was code <em>just enough</em> for the three minute (including demo) presentation that we were going to show the judges.  For some reason, the drive to make an awesome app took over the drive to make something that was <em>just enough</em>.</p>
+
+<p>All’s well that ends well though, and after a ~22 hour hack fest (I went home for a relatively useless 2 hours of sleep), we demoed our app, had it judged, and claimed the second place prize.</p>
+
+<h2>The Takeaways (or, Hackathons for Noobs)</h2>
+
+<ol>
+<li><strong>Get there early</strong>.  We were lucky enough to snag one of the very few designers at the hackathon.  There were 50-some participants and only 4-5 designers.  Network with as many people as you can before the clock starts, you never know who may be useful to your team.</li>
+<li><strong>Eat a sustainable diet</strong>.  We were fortunate to be fed healthy food (basically, not typical “pizza and mountain dew” coder food) but I made the mistake of getting a bit overzealous with the caffeine.  I paid for this dearly in the day or two after the hackathon (my sleep schedule is still a couple hours off).</li>
+<li><strong>BUILD A <em>MINIMUM</em> PRODUCT</strong>.  I capitalized this because I can’t stress this enough.  I kind of suck at keeping things to a bare minimum (I&#8217;m a bit of an over-thinker by nature) and it’s something that I feel comes more naturally with practice.  Our demo ended up being so simple, I’m almost glad we only had three minutes.  If you look at my <a href="https://github.com/hackforchange/AnonyMouse">GitHub repo</a> you will see an astonishing amount of terrible code that isn’t even used (random API calls I thought I needed). This is also important because it buys you more time to&#8230;</li>
+<li><strong>&#8230;Get some sleep</strong>.   The <a href="http://goodneighbor.heroku.com/">first place winners</a> didn’t even end up needing to pull an all-nighter. They built a simple, elegant, and useful app, went home, and came back the next morning.  Sleep is important, and I know it’s tempting to be a “hero” and stay up all night, but I promise you will end up paying for it one way or another (think mistakes-to-tiredness ratio).  Besides, if you really need the entire time, you’re probably doing it wrong.</li>
+<li><strong>Know your limits</strong>.  I ended up “cowboy” coding the entire app backend (there were a few JS hackers in the room who came by to talk to me, but most of them didn’t seem interested in working with a stack they hadn’t worked with before.  I don’t blame them) and I think I ended up coming off as a bit elitist because of this.  This couldn’t be further from the truth, however.  I’m new to this whole hacking game, and while I don’t think I’m a total zero, I know I have a <em>ton</em> to learn.  It would’ve been nice to have a teammate, but the moment I realized that I was on my own, I should’ve scaled down the amount of work.  In short, I bit off more than I could chew and ended up crashing hard after we were done.</li>
+</ol>
+
+
+<h2>The Long Road Ahead</h2>
+
+<p>The good news is that I’m back on my feet and my zeal for bringing this vision come to life is stronger than ever.  I know there will be many barriers to cross, such as high-level problems like dealing with trolls and bigots (anyone know of any papers about anti-troll algorithms? :-p) to lower level problems such as deciding whether or not to keep the current stack I’m using vs switching something out (<a href="http://redis.io/">Redis</a> is looking more and more attractive).  I know that I will probably end up coding+pushing+refactoring my code a hundred times before I’m satisfied with it.</p>
+
+<p>But that’s okay.  We’re going to make this happen one way or another.  At the end of the day, <a href="http://anonymou.se">AnonyMouse</a> is all that matters.  Having a safe, secure, and wonderful experience for both mentors and mentees that “just works” is all that matters.  Creating something that helps even a <em>few</em> people is all that matters.  And if we pick up a few more people who are willing to volunteer their time and efforts to the cause (either by helping me hack or simply helping us spread the word), that would be great too.</p>
+
+<p>It’s not going to be quick, and it’s certainly not going to be easy.  We’ve got a long road ahead, a lot of ideas and features to discuss, and a ton of challenges to deal with, but I promise, we’ll make it happen.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blog Like A Hacker]]></title>
+    <link href="http://aashay.com/blog/2011/04/06/Blog-Like-A-Hacker/"/>
+    <updated>2011-04-06T00:00:00-07:00</updated>
+    <id>http://aashay.com/blog/2011/04/06/Blog-Like-A-Hacker</id>
+    <content type="html"><![CDATA[<p><em>I&#8217;m told I&#8217;m supposed to <a href="http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html">Blog Like A Hacker</a>.<br/>
+Well, here goes nothin.</em></p>
+
+<!-- more -->
+
+
+<h2>Inspired by Tom</h2>
+
+<p>Tom Preston-Werner, one of GitHub’s cofounders, wrote the blog post I linked above, and I’d encourage you all to check out.  Just like Tom, I love writing.  I too have been locked in the constant unfortunate cycle of writing and quitting.</p>
+
+<p>It&#8217;s not that I don&#8217;t have time to write. It’s just that I tend to spend most of my time writing code instead of, well, English. It should come as no surprise to anyone that I enjoy programming.  Yes, it’s a big part of what I do at my dayjob, but it also happens to be one of my greatest passions. I’ve been working on a couple of projects here and there, but I haven’t given much time or effort to writing about them, or anything related to software, technology, or programming for that matter. I dabbled with the idea of having one personal blog and one separate code blog for a while, to cater to different people.</p>
+
+<h2>Jekyll</h2>
+
+<p>After learning about <a href="http://github.com/mojombo/jekyll">Jekyll</a>, something just clicked.  My blog has always been locked up in a database of sorts since its inception.  First it started with <a href="http://drupal.org">Drupal</a>, then I moved to <a href="http://www.wordpress.org">Wordpress</a> which I explain in <a href="http://aashay.com/Announcements/2008/04/13/welcome-to-the-new-aashay-com.html">this old announcement</a>. But why bother with such a feature-rich content management system when all I need is…a blog?</p>
+
+<p>So, in order to reignite my writing flame and keep my programming chops sharp, I’ve decided to migrate my entire site over to Jekyll.  I hand-coded the HTML/CSS styling (although it’s primarily based on <a href="http://warpspire.com/">Kyle Kneath</a>’s very excellent and very popular <a href="http://warpspire.com/hemingway/">Hemingway</a> Wordpress theme) and I even wrote a custom script (a Rakefile, for you ruby nerds out there) to help me deploy it to GitHub’s Pages, which is now my new host.</p>
+
+<p>I also implemented the lovingly-created <a href="http://tapirgo.com">Tapir API</a> for searching, and dropped in the excellent <a href="http://disqus.com">Disqus</a> decentralized commenting system.  Part of my rakefile includes tag generation, but I’ll hash out the details of that later.</p>
+
+<p>I use <a href="http://macromates.com/">TextMate</a> to write and maintain all the code and the posts, and for long periods of writing, nothing beats <a href="http://www.hogbaysoftware.com/products/writeroom">WriteRoom</a>.  All posts are written in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> and everything is pushed up to GitHub with, what else, <a href="http://git-scm.com/">Git</a>.</p>
+
+<p>But what of the content?</p>
+
+<h2>Please Exit In An Orderly Fashion</h2>
+
+<p>I’m afraid that this next part may cause me to lose some readers (all 3 of you out there).  Fortunately, it will (hopefully) bring on a new readership.  The short version of it is, I’m going to be writing a lot about my programming projects.  This could include anything from discoveries I make while coding (complete with code samples) to musings about tangential passions (such as startups, technology, and the occasional rant-as-response post).  I may still post long-form essays and have people edit them, but the majority of posts will be quick and targeted.  Fortunately everything here is organized by categories, so it should be easier to filter through any noise.</p>
+
+<p>That’s the plan, at least.  This could all change very quickly.  What’s more important than the plan is the goal:  to write as much as possible and as often as possible, and to do it all like a hacker.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Year's Resolutions 2011]]></title>
+    <link href="http://aashay.com/blog/2010/09/29/new-year-s-resolutions-2011/"/>
+    <updated>2010-09-29T00:00:00-07:00</updated>
+    <id>http://aashay.com/blog/2010/09/29/new-year-s-resolutions-2011</id>
+    <content type="html"><![CDATA[<p><em>I’ve made it a tradition to post my <a href="http://www.aashay.com/2010/01/04/new-years-resolutions-2010/">New Year&#8217;s Resolutions here</a> on my blog.  The idea is that if they’re posted somewhere public, I’ll be more likely to follow them.  This year, I’m going to do a recap of last year’s resolutions and see which ones I’ve kept and which ones I’ve broken.</em></p>
+
+<!-- more -->
+
+
+<p>I didn’t do so bad this year!  Let’s take a look at my New Year’s resolutions from 2010 and see how I managed to do:</p>
+
+<ul style="list-style-type: disc;">
+    <li>Save money.  Lots of it. - <em>I think I did pretty well here.</em></li>
+    <li>&#8220;Level up&#8221; in mastery of my instruments (this means noticeable improvements) <em>- This one is hard to judge by myself, but my bandmates seem pretty happy with my skill.</em></li>
+    <li>Overcome this epic writer&#8217;s block and write something - <em>Epic fail.</em></li>
+    <li>Continue to exercise and try and increase my <span style="text-decoration: underline;"><a href="http://www.matchmakertennis.com/public/ntrp.html">NTRP rating</a></span> by summer - <em>Although I did manage to increase my NTRP rating, I’ve fallen off the tennis boat in favor for more traditional forms of exercise.</em></li>
+    <li>Focus on projects that matter, including one major to-be-determined <span style="text-decoration: underline;"><a href="http://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal">Big Hairy Audacious Goal</a></span> - <em>I did pretty well last year but this coming year is the real determining year.</em></li>
+    <li>Focus on the people that matter - <em>A perpetual goal, I’d say I did just fine</em></li>
+    <li>Stimulate my career path - <em>Yep.</em></li>
+</ul>
+
+
+<p>So of all the resolutions, I managed to only break the writing one.  Oddly enough I did the same thing in 2009.</p>
+
+<p>Now let’s take a look at my resolutions for 2011.</p>
+
+<ul style="list-style-type: disc;">
+    <li><strong>Get healthy. </strong> I’ve recently discovered that I might not be in the most perfect state of health, so this year my focus is to drastically change my diet and exercise habits.  Fortunately I got a head start a few weeks ago on this one so I don’t think this’ll be very hard to maintain.</li>
+    <li><strong>Continue saving money. </strong> I didn’t do so bad last year but this year I’m going to be taking even more aggressive steps to save, including making some smart investments.</li>
+    <li><strong>Write damnit! </strong> I know I tell everyone I’m going to do this every year, but this year I mean it.  I’ve recently started journaling and hopefully I’ll post some of my better essays on this blog.  I’m also considering starting up a secondary “nerd” blog to write about my misadventures in hacking on my personal projects, but I’m still working on the logistics (i.e. whether or not they’ll be posted here).</li>
+    <li><strong>Kaizen</strong> aka Continual self-improvement.  I need to improve any existing talents, including (but not limited to) music and hacking.  The latter especially will help with career moves.</li>
+    <li><strong>Learn something new. </strong>I’d like to add another skill to my plate this year, and I’m thinking it might have to do with cooking.  Fortunately I’ve got a wonderful partner-in-crime for this particular endeavor, and learning to cook will help me out with resolution 1 as well.</li>
+</ul>
+
+
+<p>So, there you have it.  Now let’s hear your resolutions!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Year's Resolutions 2010]]></title>
+    <link href="http://aashay.com/blog/2010/01/04/new-year-s-resolutions-2010/"/>
+    <updated>2010-01-04T00:00:00-08:00</updated>
+    <id>http://aashay.com/blog/2010/01/04/new-year-s-resolutions-2010</id>
+    <content type="html"><![CDATA[<p><em>Last year I posted my </em><a href="http://www.aashay.com/2009/01/01/new-years-resolutions" target="_blank">New Year&#8217;s Resolutions here</a>, and I&#8217;m proud to say that I managed to follow most of them (although not all of them).  I&#8217;m doing the same this year.</em></p>
+
+<!-- more -->
+
+
+
+
+<div id="_mcePaste">Of my New Year&#8217;s Resolutions from 2009, I managed to actually accomplish all but 2 (I never did get to contribute to an open-source project, and I definitely haven&#8217;t written anything new).   I figure I might as well tell you the plan for this year:</div>
+
+
+<div id="_mcePaste">
+<ul>
+    <li>Save money.  Lots of it.</li>
+    <li>&#8220;Level up&#8221; in mastery of my instruments (this means noticeable improvements)</li>
+    <li>Overcome this epic writer&#8217;s block and write something</li>
+    <li>Continue to exercise and try and increase my <a href="http://www.matchmakertennis.com/public/ntrp.html" target="_blank">NTRP rating</a> by summer</li>
+    <li>Focus on projects that matter, including one major to-be-determined <a href="http://en.wikipedia.org/wiki/Big_Hairy_Audacious_Goal" target="_blank">Big Hairy Audacious Goal </a></li>
+    <li>Focus on the people that matter</li>
+    <li>Stimulate my career path</li>
+</ul>
+</div>
+
+
+<p>Let&#8217;s hear your resolutions for this year!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Year's Resolutions 2009]]></title>
+    <link href="http://aashay.com/blog/2009/01/02/new-year-s-resolutions/"/>
+    <updated>2009-01-02T00:00:00-08:00</updated>
+    <id>http://aashay.com/blog/2009/01/02/new-year-s-resolutions</id>
+    <content type="html"><![CDATA[<p><em>Normally I post long-form essays here on my site.  However, I figured if I exposed my New Year&#8217;s Resolutions somewhere public, I might be more prone to follow them.</em></p>
+
+<!-- more -->
+
+
+<p>I wrote down my New Year&#8217;s resolutions in one of my <a href="http://www.evernote.com" target="_blank">Evernote</a> notebooks, but I figure I&#8217;d share them with you all.  I&#8217;d say they&#8217;re pretty realistic and hopefully I won&#8217;t have problems sticking to &#8216;em.  So, without further ado:</p>
+
+<ul>
+    <li>Practice guitar/bass for a total of 5 hours a week, minimum</li>
+    <li>Compose music again</li>
+    <li>Write more (both blog essays and hopefully restart the fiction work too)</li>
+    <li>Talk to strangers more (and meet more people in SF)</li>
+    <li>Exercise (I&#8217;m sure I&#8217;ll be more motivated when my <a href="http://www.fitbit.com" target="_blank">FitBit</a> arrives)</li>
+    <li>Contribute to an open-source project</li>
+    <li>Get a raise/promotion at (or before) my 1-year anniversary at my company</li>
+</ul>
+
+
+<p>What were your New Year&#8217;s resolutions?  Post some in the comments section (or in the Notes comments if you&#8217;re reading this via Facebook)!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Changes]]></title>
+    <link href="http://aashay.com/blog/2008/12/29/changes/"/>
+    <updated>2008-12-29T00:00:00-08:00</updated>
+    <id>http://aashay.com/blog/2008/12/29/changes</id>
+    <content type="html"><![CDATA[<p><em>In this post, I discuss a few major life changes I&#8217;ve recently made, the stimulus for the change, and my plans for the immediate future.</em></p>
+
+<!-- more -->
+
+
+<p>I haven&#8217;t worked on any computer projects in a few weeks. I haven&#8217;t written a new essay in a few months. I haven&#8217;t written a new original song or worked on my short stories in a few years. One morning I woke up realizing all of these things at once and I decided that something wasn&#8217;t right.  Was it a lack of creativity?  Motivation perhaps?  Well, it turns out that it was a combination of both. But what could be causing such a drain?</p>
+
+<p>It turns out that it was my job.</p>
+
+<p>A few months ago, I quit my job and moved to the Bay Area for a brand new one.  Some people found this change to be a bit drastic, but as I&#8217;ll explain later in this essay, it was a decision in progress for several months. I came to realize that my job left me little time or energy to work on my own projects, and that coupled with general career path dissatisfaction made me decide that it was time to move on.  I&#8217;d like to provide a basic summary of what I did, and why.</p>
+
+<h2>So what is it that you do here?</h2>
+
+
+<p>I graduated engineering school with a degree involving a healthy blend of business and nerdery.  Most people know that I&#8217;m in the software industry, yet don&#8217;t realize that I did not graduate with a degree in Computer Science. I made that move specifically so that I got a lot more exposure to the business side of engineering, and it was definitely the right move. So naturally after I graduated I decided to pursue the best of both worlds.</p>
+
+<p>Consulting was a great fit, and so I managed to land myself a pretty hip gig traveling to the west coast working on, you guessed it, business software.  I went to clients, talked about their business needs, put on headphones, and crafted solutions out of thin air.</p>
+
+<p>I got a lot of exposure to the whole &#8220;real world&#8221; thing, but I also learned a lot about the niche I was in.  I busted ass, and I&#8217;d say I was pretty decent at what I did.  I made senior in a year, which was pretty cool, since that doesn&#8217;t happen too much at my former company.</p>
+
+<p>When I told my manager I was leaving, it was pretty evident that he didn&#8217;t see it coming.  He explained to me that I was on the &#8220;fast track&#8221; at my company and in my career, and that I should be absolutely sure of what I&#8217;m doing before making such a drastic career change.</p>
+
+<p>So why&#8217;d I jump ship?</p>
+
+<h2>Didn&#8217;t you get the memo?</h2>
+
+
+<p>I&#8217;m going to let you in on a few secrets.  Most common folks don&#8217;t know anything about ERP, CRM, PLM, B2B, B2C, or any other fancy acronyms you throw at them.  All they know is that they get paid to go to work, and sometimes they spend that money on things.  The business world has a very ornate ecosystem that, for some reason, works like an echo chamber.  Everyone in it can hear each other to some degree, but anyone outside of it is blissfully unaware of how it affects them.</p>
+
+<p>When you go to the store to buy something, you&#8217;re buying directly from a business.  We call that &#8220;Business to Consumer&#8221; or B2C for short.  However, that business can&#8217;t do everything on its own to sell you that product (no, not even Apple.  Looooove yooou!) and so it has to depend on other businesses to help it along the way.  The interaction between businesses (business-to-business, or B2B) is the space I&#8217;m in, and it&#8217;s a different monster from the B2C interactions that we are all used to.</p>
+
+<p>That thing you bought at the store?  Well it wasn&#8217;t always there.  It got shipped there, and so that involved some sort of shipping logistics.  Someone had to purchase that thing from some vendor, or perhaps put in an order at some overseas manufacturing facility, so now we&#8217;re talking about procurement or perhaps production.  Clearly there was money involved, so that means financials.  Obviously a bunch of human beings were involved in this and so now we&#8217;re talking about human resources.  Maybe there were some sales guys involved in cutting a deal to get that product to the stores and in your hands, so that means some sort of customer relationship management.</p>
+
+<p>If all of this sounds complex, it&#8217;s because it is.  Being the enginerd I am, I&#8217;m attracted to complex systems.  The unfortunate part about these <em>complex</em> systems is that they are also usually <em>complicated</em>.  But, that doesn&#8217;t mean they have to be.</p>
+
+<h2>It&#8217;s not that I&#8217;m lazy.  It&#8217;s that I don&#8217;t care.</h2>
+
+
+<p><span>Business software doesn&#8217;t evolve as rapidly as consumer software.</span> However, in the past few years, a handful of really bright people decided to take unique approaches to some common complexities.  They decided &#8220;Hey, we&#8217;re going to do this differently&#8221; and of course their well-established counterparts scoffed.  They found a way to deliver business software without the typical overhead and up-front costs to the customer, and Software-as-a-Service was born.</p>
+
+<p>My former company is, by design, affiliated with one of those well-established counterparts.  So, when I was sent out to help folks with their businesses, they had to play by our rules, which were the rules passed down by our king company.  We used a specific platform, did things a specific way, and used the same playbooks over and over for completely different businesses.  Also, the tools and technology we used were designed for very specific purposes.</p>
+
+<p>I think most good technologists don&#8217;t like being tied down like this, especially early on in their careers.  I suppose if I stuck around, I would&#8217;ve become a total guru at doing what I was doing.  But that would&#8217;ve just turned me into a magician with one good magic trick, and that&#8217;s not the career path I wanted to head down.</p>
+
+<p>I don&#8217;t want to be such a specialist.  I want to experience a wide variety of technologies, tools, and tricks of the trade.  I want to expand my horizons and work with the absolute best.  That handful of really bright people who take unique approaches have created astounding companies that have developed revolutionary technology- and I want to be a part of that wave.  Knowing about it and not being a part of it caused me to become a bit stagnant.</p>
+
+<p>Of course, there were other reasons besides wanting to hang out with the cool kids that made me make the switch.</p>
+
+<h2>Deeper and deeper.  Way down.</h2>
+
+
+<p>Few people would argue against the statement that the San Francisco Bay Area (which includes Silicon Valley) is filled with some of the country&#8217;s brightest minds.  I always try to be around smart people, and while the folks I previously worked with were quite smart (and thanks to the hours I worked, I was definitely around them quite a bit), there was something about the Bay Area vibe that caught my attention.  Moving to the Bay Area was an obvious choice.</p>
+
+<p>I managed to get lucky in that my last project, before I quit, was in the Bay Area, and I stayed at a place in San Francisco while on it.  However, just because I resided in San Francisco didn&#8217;t mean I &#8220;lived&#8221; in San Francisco.  My job&#8217;s long hours and travel schedule were hardly conducive to any sort of social lifestyle out here, and that was a problem.</p>
+
+<p>My former company was also having issues of its own.  Retention was poor, possibly because of &#8220;the economy&#8221; or the shifts in the company direction.  Nobody really knows even today, but the point is that the situation was looking a bit grim.  While my particular position was secure (at least, I assumed as much), all the nervous energy made it apparent that I needed a backup plan.</p>
+
+<p>I found a position at my new company (I still need to talk to our PR department to see if it&#8217;s okay for me to disclose the name, will post an update later if possible) that lets me build things that help other people by making their work lives easier, and allows me to work in a stimulating environment with intelligent people.  So the question that remains is, what&#8217;s next?</p>
+
+<h2>I wouldn&#8217;t say I&#8217;ve been missing it, Bob</h2>
+
+
+<p>Some of you may be wondering if I miss the perks that came with my consulting job. Don&#8217;t I miss the basically-free travel, hotel and airline points, and nomad lifestyle? Meh, not really.  I&#8217;m not going to lie and say that the next five years of my life are planned out.  Sure, there&#8217;s a possibility of me getting back into the consulting gig some day.  There&#8217;s even the possibility of me not being in the software realm in the future.  It&#8217;s pretty hard to tell where I&#8217;ll be, but that&#8217;s not to say I don&#8217;t have a vision for the future.</p>
+
+<p>It&#8217;s no secret that I&#8217;m aligning myself to either create or be a part of a start-up some day.  Until that happens, I can only absorb as much knowledge as possible and develop skills along the way to prepare me for those days.  I&#8217;m pretty sure that my recent career move is only going to help in that respect.  I almost make it sound like I&#8217;ve got some sort of career commitment phobia, but rest assured, as long as I&#8217;m being intellectually stimulated, working on a kickass product, and working with brilliant people, I&#8217;ll be quite happy.</p>
+
+<p>Now, what these decisions are going to do for my comatose creative life is still a toss-up&#8230;but I suppose I&#8217;ve already taken the first step.</p>
+
+<p>Special thanks to <a href="http://www.dashofstash.com" target="_blank">Mike Stashwick</a> for reading drafts of this essay.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Life in the Cloud(s)]]></title>
+    <link href="http://aashay.com/blog/2008/06/09/my-life-in-the-cloud-s-/"/>
+    <updated>2008-06-09T00:00:00-07:00</updated>
+    <id>http://aashay.com/blog/2008/06/09/my-life-in-the-cloud-s-</id>
+    <content type="html"><![CDATA[<p><em>In this essay, I explain how I use a variety of Web 2.0 software and applications that store my data &#8220;in the cloud&#8221; to manage my busy traveling consultant lifestyle.  All of the applications I use are free (as in beer), although some are still in beta (meaning that the developers feel they are basically unfinished or unpolished).  These apps not only help me keep organized, but they help me keep in touch with people while I&#8217;m away from home, and also allow me to bring a piece of home with me wherever I go.</em></p>
+
+<!-- more -->
+
+
+<h2 id="lhh20">I&#8217;m a travelin&#8217; man</h2>
+
+
+<p>It&#8217;s no big secret that I travel a lot.  Since late last summer, I have been on two flights a week without fail (with the notable exception of holidays and a couple of go-live weekends).  My job as a traveling consultant adds some challenges to my personal life that become a lot more manageable with modern-day technology.  Using a combination of gadgetry and a few clever web applications, I&#8217;ve managed to bring everything together in a way that keeps me productive and sane.<br id="vc516" /><br id="vc517" />Traveling days themselves are the most hectic, and so they provide the best use case for all of the apps I use.  My current gadgetry (I say &#8220;current&#8221; because these are subject to change pretty soon) to interface with these apps consist of my work computer (a simple Dell D620 laptop) and my handy Blackberry Pearl.   Most people who use Blackberries don&#8217;t realize their full potential as mobile devices;  they typically use them as phones and to check their email.  Naturally, I use it for both of those tasks as well, but I&#8217;ve added the ability to synchronize my Blackberry calendar with my Google Calendar, and I&#8217;ve also installed a couple of other applications that I&#8217;ll discuss later in this post.<br id="vc518" /><br id="vc519" />I should also add that this post is about organizing my personal life while I&#8217;m at work, not my professional life. I use Outlook to take care of my day-to-day tasks and appointments at work, and I never sync it with my personal Blackberry.  I don&#8217;t even check my work e-mail on my Blackberry; this is how I stay sane doing what I do.</p>
+
+<h2>The Cloud</h2>
+
+
+<p>By now, it should be pretty clear that I&#8217;m on the go all the time, so being tied down to a particular computer is not an option.  I want all of my data with me everywhere I go, and have it be easily accessible no matter where I am or what kind of device I&#8217;m using.  This kind of progressive thinking has the tech world discussing what is being commonly referred to as &#8220;the cloud.&#8221;  Using a variety of new applications (which, by the way, have all sorts of security measures in place to make sure my data is secure all the time), I can keep my information stored &#8220;in the cloud&#8221; and get it whenever I want and wherever I am.   While my experience with the &#8220;cloud&#8221; isn&#8217;t 100% perfect (yet), I think I&#8217;ve come pretty close, and I&#8217;m always looking for better ways to interact with it. <br id="vc5114" /> <br id="vc5115" />So what is this elusive &#8220;cloud&#8221; that I speak of?  Without getting too technical, modern web applications both manage and store their data in a &#8220;cluster&#8221; of servers that are arranged to work together.  These servers, which <a href="http://en.wikipedia.org/wiki/Virtualization" target="_blank">may not even be physical computers</a>, work in parallel and this arrangement is commonly referred to as a &#8221;<a href="http://en.wikipedia.org/wiki/Cloud_computing" target="_blank">cloud computing.</a>&#8221;  The name comes from the common representation of server clusters in computer architecture diagrams as clouds.  One of the largest advantages to this arrangement is scalability, or basically, creating infrastructure to support lots and lots of users; thousands, even millions of users can be active on a system and everything is easily managed, as new servers are added to the cloud easily.<br id="vc5116" /><br id="vc5117" />While data stored on these applications&#8217; servers is generally regarded as safe and secure, there is the notion of being able to &#8220;take your data with you&#8221; from one service to another.  This issue is being addressed by a group called the <a href="http://dataportability.org/" target="_blank">Data Portability group</a> and while major players like Google and Facebook have made nice with Data Portability, it seems like it&#8217;s going to take a little bit of time before the actual data becomes truly portable.  However, I find that in the current state of things, having easy access to my data from anywhere at any time takes priority over being able to move it to a different service.  That&#8217;s not to say I disagree with Data Portability;  on the contrary I&#8217;m all for it.  But I digress.  Let&#8217;s take a closer look at the actual use of these applications.<br id="vc5118" /><br id="vc5119" /></p>
+
+<h2 id="lhh22">Monday Morning Routine</h2>
+
+
+<p>I wake up crazy early on Monday mornings to fly out from Chicago&#8217;s O&#8217;Hare airport.   While traveling via taxi to the airport, I check my itinerary on my phone using the mobile version of <a href="http://tripit.com" target="_blank">TripIt</a>.  TripIt is a must-have service for anyone who travels a lot.  It automatically &#8220;scrapes&#8221; confirmation emails sent out from travel services (airlines, rental car companies, hotels, and even travel companies like Orbitz and Priceline) and converts the information into consolidated itineraries complete with maps and weather forecasts of the locations you&#8217;re traveling to.  All you have to do is forward confirmation emails to plans@tripit.com and the rest is magic (when you send out your first email, TripIt creates an account for you).  The most valuable feature to me is their iCal feed feature that lets me view my travel complete travel plans in my <a href="http://calendar.google.com" target="_blank">Google Calendar</a> (hence my Blackberry calendar).  There&#8217;s even a feature that allows you to see if any of your friends are going to be in the same city as you when you travel, however I have yet to use that feature (I don&#8217;t have a lot of friends who travel for work, and I usually know where my coworkers are going anyways).<br id="vc5122" /><br id="vc5123" />Another travel application that is worth a quick mention here is <a href="http://dopplr.com" target="_blank">Dopplr</a>.  Dopplr is more of a social utility as their primary focus is on helping you connect to other travellers that share the same destination as you.  However, I discontinued use of the application because it required manual data entry;  I&#8217;d much rather have a handful of emails forwarded to an address (which I don&#8217;t usually even do manually, thanks to GMail&#8217;s filters) than have to type in where I&#8217;m going in a website every week.<br id="vc5124" /><br id="vc5125" />After checking my itinerary, I usually need a good time waster, so I check my RSS newsfeeds on <a href="http://reader.google.com" target="_blank">Google Reader</a> mobile.  One of the things I love about Google&#8217;s applications is that many of their apps have great mobile versions, and Google Reader mobile is no exception.  While the average Joe might not use an RSS reader (or even know what one is), tech savvy individuals who like to read several blogs and news websites find that they benefit greatly by using one, and Google Reader is one of the better ones out there. My only gripe with it is that it shows stories in random order;  I wish there was a way to organize the chaos a little better.  The biggest benefit, however, is that when I mark a story as read using the mobile version, the &#8220;online&#8221; version syncs to it automatically.<br id="vc5126" /><br id="vc5127" /></p>
+
+<h2 id="pnz00">At the airport and on the plane</h2>
+
+
+<p>While I wait for my flight, I might have access to free wifi (depending on which airport I&#8217;m at), I&#8217;ll usually hop online to sync my Google Reader into offline mode.  Offline mode is a new-ish feature in a few Google applications (and non-Google ones for that matter) thanks to <a href="http://gears.google.com/" target="_blank">Google Gears</a>.  A quick, painless install of Google Gears allows me to take my newsfeeds with me in offline mode for reading on the plane.   I subscribe to a variety of blogs, many of them tech-oriented such as <a href="http://techcrunch.com" target="_blank">TechCrunch</a> or <a href="http://lifehacker.com" target="_blank">Lifehacker</a>, but of course there are oodles of news sources one can subscribe to besides blogs.  <br id="vc5130" /><br id="vc5131" /><a href="http://docs.google.com" target="_blank">Google Docs</a> also offers offline mode (although, at the time of this post, only the word processor has it) which is great since I use it to write drafts of posts for Aashay.com.  For those of you who are unaware or unfamiliar with Google Docs (aka GDocs), it&#8217;s basically a word processor (like Microsoft Word) and also a spreadsheet (like Microsoft Excel) application that runs within your browser.  It has been one of my favorite applications for a long while now, mostly due to its collaboration features.  It allows you to work with other people simultaneously (or asynchronously) on the same documents/spreadsheets, and while this may sound like a gimmick to some, let me tell you first hand that GDocs&#8217; collaboration features helped me get through my senior design project in college.  Since I have people serve as guest-editors to my posts here, I write them in GDocs offline mode, sync when I&#8217;m online, and invite them to collaborate/annotate on my posts before I post them.  It&#8217;s seriously good stuff.<br id="vc5132" /><br id="vc5133" /></p>
+
+<h2>To the client</h2>
+
+
+<p>Depending on the client I&#8217;m travelling to, I might need to rent a car and drive for a bit.  This is where my organization-a-la-webapps gets even more high tech.  While driving, I usually like to plan out my day and think about things I might need to do that don&#8217;t fall under the category of &#8220;tasks for work,&#8221; such as buying groceries, paying bills, or making personal phone calls.  Before you imagine me holding the steering wheel with one hand and my laptop/Blackberry with another, however, let me tell you about a service called <a href="http://jott.com" target="_blank">Jott</a>.  The basic gist of Jott is that it&#8217;s a voice-to-text service that allows you to email yourself (or others) using nothing but a phone.  The other fantastic thing about Jott is that it works with a variety of third-party services, notable Sandy and Twitter (more on these later).  <br id="vc5136" /><br id="vc5137" />While driving, I&#8217;d activate my bluetooth headset, and use the voice-activated dialing to &#8220;Call Jott.&#8221;   Once the number dials, and I hear the familiar &#8220;Who do you want to Jott?&#8221; prompt, I would say something like &#8220;myself&#8221; and wait for the beep.  Then I would say something like &#8220;remember to buy allergy medicine this evening&#8221; and after Jott&#8217;s magic elves decode my voice to text, I would get an email that had my voice transcription in it.  It&#8217; pretty neat stuff, but it&#8217;s still very new, so it has its quirks.  I once used Jott to transcribe a grocery list to myself on the way to the store, but the transcription process took so long that didn&#8217;t get the email until after I was in the checkout line (needless to say I forgot a few things).  Most of the time, however, it works pretty quickly.  It&#8217;s nice to be able to email myself, but when it comes to todo&#8217;s and reminders, I take it a step further with a fantastic new service called Sandy .<br id="vc5138" /><br id="vc5139" /><a href="http://iwantsandy.com" target="_blank">Sandy</a> is my personal assistant&#8230;sorta.  It&#8217;s an online service that allows me to send myself reminders at specific times, schedule appointments, make todo lists, and remember details about people, places, and things.  This is all facilitated via a virtual secretary of sorts named Sandy.  I interact with Sandy by sending &#8220;her&#8221; an email (or using Jott, an SMS text message, or a Tweet from Twitter; more on Twitter later) with a few basic keywords such as &#8220;remind me to do my laundry at 9pm tomorrow&#8221; or &#8220;remember that the car is parked in the south lot&#8221; and when the time is right, Sandy will send me an email reminder, if appropriate, to take care of business.  <br id="vc5140" /><br id="vc5141" />I can also store and organize any data I want using Sandy by using tags; all I have to do is prepend an &#8220;@&#8221; symbol in front of a tag.  For example, I have an @ideas tag that I use to store random product and/or invention ideas I think up every now and then.  I&#8217;ll send Sandy an email with something &#8220;remember portable fuel-cell powered jetpack @ideas.&#8221; I can then send a &#8220;lookup @ideas&#8221; message and Sandy emails me back a list of my latest crazy ideas.  It&#8217;s a fantastic service, and while they&#8217;re still in beta (there are a few tweaks that need to be made still), I highly recommend it.  The fact that I can contact Sandy from so many mediums makes it that much more valuable.  Also, the overall interaction experience with Sandy is a lot of fun:  the designers make it feel like you&#8217;re actually interacting with a person.<br id="vc5142" /><br id="vc5143" /></p>
+
+<h2>Calling it a night</h2>
+
+
+<p>While on client sites, I stay in a variety of hotels.  After checking in to my hotel at night, I like to unwind a bit and maybe do a little websurfing while listening to some music from <a href="http://www.pandora.com" target="_blank">Pandora</a> or my home <a href="http://ampache.org/" target="_blank">Ampache</a> library (while neither of these function as cloud services, I figure I mention them anyways.  I&#8217;m hoping that Pandora will soon open up to more devices).  When living in hotels 80% of your week, it&#8217;s harder to stay social.  That&#8217;s why I use applications like <a href="http://www.facebook.com" target="_blank">Facebook</a> (which needs no explanation, I&#8217;m sure) and Twitter to stay in touch with friends.<br id="vc5146" /><br id="vc5147" /><a href="http://twitter.com" target="_blank">Twitter</a> is an odd phenomenon.  It&#8217;s a service that allows you to &#8220;microblog&#8221; your life by posting short 140-character-or-less messages (called &#8220;tweets&#8221;) to the Twitter website.  These short messages are meant to answer the question, &#8220;what are you doing?&#8221; and not only appear on your personal Twitter page, but can be sent instantaneously to friends of yours who &#8220;follow&#8221; you on Twitter.<br id="vc5148" /><br id="vc5149" />Most people who don&#8217;t use Twitter fail to understand it, and in most cases, assume it to be useless and even silly.  I know I was in that boat:  when I first heard about it, I thought to myself, &#8220;this sounds totally obnoxious.&#8221;  Why would I want to know what my friends are doing all of the time?  As much as I love &#8216;em, I know them well enough to imagine my feed being polluted with such messages as &#8220;climbing stairs,&#8221; &#8220;eating a sandwich,&#8221; or even &#8220;pooping.&#8221;   Do I really need to know all of these aspects of people&#8217;s lives?  More importantly, do they really need to know mine?<br id="vc5150" /><br id="vc5151" />The truth is, while Twitter can easily be misused for spamming mundane details about one&#8217;s life, most Twitter users don&#8217;t do that (unless in jest, of course).  It&#8217;s become increasingly useful as an asynchronous conversation platform, since all you have to do to &#8220;reply&#8221; (in quotes, as you can &#8220;reply&#8221; to someone without actually replying to a specific message) to someone&#8217;s messages publicly is throw in an @ in front of their username (for example, to send me a &#8220;reply&#8221; just send a message to @Aashay on Twitter).  These &#8220;replies,&#8221; or &#8220;at messages&#8221; as some people call them, are publicly viewable, and often spawn conversations between groups of people.  While I rarely use them, Twitter also offers &#8220;direct&#8221; (private) messages.<br id="vc5152" /><br id="vc5153" />Certain people who are &#8220;popular&#8221; on Twitter (meaning they have a lot of followers) such as web celebrities like <a href="http://twitter.com/kevinrose" target="_blank">Kevin Rose</a> and popular bloggers like Michael Arrington of <a href="http://twitter.com/techcrunch" target="_blank">TechCrunch</a> have tens of thousands of followers.  Why?  Because they often have useful, interesting, or important things to say.  Bloggers especially can use Twitter to their advantage as it lets them push breaking news to thousands of people before anybody else gets to it.  The recent deadly earthquakes in China, for example, were <a href="http://news.yahoo.com/s/afp/20080514/tc_afp/uschinaitinternetmediaearthdisastertwitter" target="_blank">reported by people in China using Twitter</a> long before CNN reported them.<br id="vc5154" /><br id="vc5155" />I personally use Twitter to keep in touch with a handful of Bay Area friends, but I also use it to publish information about what flights I&#8217;m taking when I fly around.  It&#8217;s a safety thing, in a way;  in case any news breaks of plane mishaps (let&#8217;s hope there won&#8217;t be any), people who care can stay informed.  Twitter is also terribly addicting once you and a small group of friends start using it.  The most common use of Twitter is using it on mobile devices, whether through SMS messages or clients (I use one called <a href="http://www.orangatame.com/ota/twitterberry/" target="_blank">TwitterBerry</a>).  It makes tweeting on the go practical and useful.  People have even organized entire impromptu parties by using Twitter from their mobile devices!<br id="vc5156" /><br id="vc5157" /></p>
+
+<h2 id="tmom1">Will that be all, sir?</h2>
+
+
+<p>One final service I&#8217;ve been using that deserves a mention, but doesn&#8217;t fit in a specific &#8220;timeslot&#8221; during my day, is <a href="http://www.getdropbox.com" target="_blank">Dropbox</a>.  It&#8217;s still in private beta, so you might not get a chance to use it for a while, but I can at least share my experiences with it.  Dropbox describes itself as a solution for &#8220;secure backup, sync and sharing made easy&#8221; and those three reasons are exactly why I use it.  It backs up my files, allows me to store one persistant version of each one across multiple computers (for example, I can make a change to a Visio document on my laptop, and any other PCs or Macs I have my Dropbox account linked to automatically see those changes), and makes it easy to share certain files with friends.   They&#8217;ve also got a slick web interface and they make it easy to &#8220;roll back&#8221; to previous versions of your files.  Dropbox is still in development, so I can only assume they&#8217;ll be adding more features later.<br id="vc5159" /><br id="vc5160" /></p>
+
+<h2 id="bs830">Store it in the cloud and go to bed already</h2>
+
+
+<p>I&#8217;m always on the hunt for new, useful web applications to improve my productivity and lifestyle.  Desktop apps are great, but being constrained to a single computer is no longer acceptable in the world I live in.  Web applications offer much more in terms of letting me access my data anywhere and letting me do a lot more with it.  While some of the apps I mentioned might sound confusing, useless, or overkill at first, I encourage you to explore them and see if they improve your lifestyle even the least bit.  I think, with the right mix of patience and the will to learn new things, you just might find something new, useful, and fun to use.<br id="vc5162" /><br id="vc5163" /><br id="l4cd0" /><br id="f_3t0" />Thanks to <a href="http://jevonwild.com/" target="_blank">Jevon Wild</a>, <a href="http://www.russelldare.net/" target="_blank">Russell Dare</a>, and <a href="http://twitter.com/narhasan" target="_blank">David &#8220;Skipper&#8221; Everling</a> for reading drafts of this post.</p>
+]]></content>
+  </entry>
+  
+</feed>
