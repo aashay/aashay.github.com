@@ -25,7 +25,7 @@
     })();
   </script>
 
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
 <style type="text/css">
     
@@ -53,8 +53,22 @@
         margin-top: -3em;
     }
     a {
-      color: #000;
+        color: #000;
     }
+
+    #photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        background: url(https://en.gravatar.com/userimage/673452/e2e913004e950437bd72e2bc6b1a3be6.jpg?size=300) no-repeat;
+    }
+
 
     </style>
 
@@ -62,7 +76,8 @@
 
 <body>
     <div id="main">
-        <h1>Aashay.com<br/>
+        <h1><img id='photo' src='https://en.gravatar.com/userimage/673452/e2e913004e950437bd72e2bc6b1a3be6.jpg?size=300'/>
+          <br/><br/>Hi! I'm Aashay.<br/>
           <p>
           <a href='https://twitter.com/aashay' target='_blank'><i class="fa fa-twitter-square fa-fw"></i></a>&nbsp;&nbsp;
           <a href='http://www.linkedin.com/pub/aashay-desai/9/9a/195' target='_blank'><i class="fa fa-linkedin-square fa-fw"></i></a>&nbsp;&nbsp;
