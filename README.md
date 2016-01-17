@@ -1,1 +1,1 @@
-Generated source for aashay.com (powered by Octopress)
+Just another website.
