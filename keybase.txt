@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/aashay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aashay.com
+  * I am aashay (https://keybase.io/aashay) on keybase.
+  * I have a public key with fingerprint BF57 1D60 AAA6 4B45 DAA7  0B18 E2C4 0ECC DB81 0E99
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ff65da07034f1ec8b72d32a1217bc5443dd000ebc514d7493a2e63c3642581c20a",
+            "fingerprint": "bf571d60aaa64b45daa70b18e2c40eccdb810e99",
+            "host": "keybase.io",
+            "key_id": "e2c40eccdb810e99",
+            "kid": "0101ff65da07034f1ec8b72d32a1217bc5443dd000ebc514d7493a2e63c3642581c20a",
+            "uid": "da55f1d777c52d9283c7ce28dd9a3719",
+            "username": "aashay"
+        },
+        "service": {
+            "hostname": "aashay.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1479752155,
+    "expire_in": 157680000,
+    "prev": "c45ad0fbb84b0c36d66552140b6401624c91b05eca2f916c9ca13c4d164cc93a",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbSFRBGF4tsxbTIkolKjsF3WSbOWfObaMyJOxCEHaxKNrmzMxxT6t7
+1j1nt1RK8iHEJLQeEnrIB8MyKshUyh6yO9VTamBCQil2IzKIpBebI/UQ9NjTzPzz
+fd//fT//w9nTfP6UdXnO7M7dxUUpz3vPJXz7JH2oWjBsWikEq4UImzpYGWWOG4pY
+VAgKAAJomopMMVCBhEzIiGaoIpVEDEWoGkRGSKIUAMD4HSKqIl3CIlMkIilIlDVI
+RICFfMG0oqUsHotbUZfLGqasQqoAjLGCDMTlsQoMqDGRIMAIoYYGAdN1Tgzbjsfg
+5gzssIBl8xp/hKbs/QP/n30npuQolmUTUlVViSxSXdQkohImapTqWFKh1zfhsHgU
+lzOOxtgJ40rheL7Aa0mLMG+sXo6//gPELue8WNx2bWKX8XrYdWNO0OO5lTEPeJQZ
+od8SIcOKUj5DzkiyuGPZUSEIOZK4lqcJkaqrsghlOV9gx2JWnIUsDyGrisZDAq8P
+S3JJgmRMgWkYGjIAz0oVReY8BAwFAaiIiOjQADIjWDR1qBCdYCgRRKGCCOEjErxQ
+FVFbCOrcJi7lko5VGsVuIs6E4/fvHZzuS/H7ZqSlervl88+a82fjAivSJ+mtuc2T
+zX3ZqTgx/Gnj91eZVQvO5z8Zv95z5+Ld+QmxprijYPTRHffr4tbxSHikc3lhS3pA
+i0wWhTuy3v9snTnR2NC7AeVUFZ/ceS27LKu9/tmDgksX9sc+RA4vy4Unxiv2Fq1J
+q5uzsmVGqH/s0I3+gqsTZP2ecFuGO5CUhCUXP5afOdF4eEdJR8+3wO0DRxZ3rbmc
+9aDm9aoPLRlnmwf23d+1ZXVh8PHmtpLTze/yHr8d6xZPtblyU6O5dHP9WG/7j+qc
+hU8PPql78yLuPxS7kPkl0xxdsWjr9pF5XcPtRuG2mw31QztC3X21V7o7O6NXXtb4
+1rLP9wYnmkZzB9OKyuRNtb8Ayik8Jw==
+=3afg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aashay
+
+==================================================================
