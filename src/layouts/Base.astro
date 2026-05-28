@@ -1,0 +1,78 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = 'https://aashay.com/';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content="https://aashay.com/og.jpg" />
+    <meta property="og:image:width" content="955" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Aashay seated on a wide ochre sofa, hands clasped, looking off-frame." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://aashay.com/og.jpg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0B0C0C" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="index,follow" />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aashay Desai",
+      "url": "https://aashay.com",
+      "jobTitle": "Product Manager",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Meta",
+        "url": "https://www.meta.com/"
+      },
+      "description": "Product manager at Meta building developer platforms in the AI-native era. Close to two decades across engineering, partner engineering, developer relations, and product.",
+      "knowsAbout": [
+        "Developer platforms",
+        "Developer experience",
+        "Developer relations",
+        "Partner Engineering",
+        "Forward Deployed Engineering",
+        "Agentic AI",
+        "LLM tooling",
+        "AI infrastructure",
+        "Platform product management",
+        "APIs",
+        "SDKs",
+        "Zero-to-one product"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/aashaydesai/"
+      ]
+    })} />
+  </head>
+  <body>
+    <span class="crop crop-tl" aria-hidden="true"></span>
+    <span class="crop crop-tr" aria-hidden="true"></span>
+    <span class="crop crop-bl" aria-hidden="true"></span>
+    <span class="crop crop-br" aria-hidden="true"></span>
+
+    <div class="page">
+      <slot />
+    </div>
+  </body>
+</html>

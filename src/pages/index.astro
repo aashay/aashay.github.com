@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Aashay Desai"
+  description="Aashay Desai is a product manager at Meta building developer platforms in the AI-native era. Close to two decades across engineering, partner engineering (Forward Deployed Engineering), developer relations, and product. He builds with AI to ship AI: agentic systems, LLM tooling, developer experience, APIs, SDKs, and zero-to-one platform work. Open to Director, VP, and Head of Product roles in developer platforms, DevTools, and AI-native developer experience."
+>
+  <main>
+    <section id="hero" aria-labelledby="hero-statement">
+      <p class="hero-greeting" data-reveal>Hey, I'm Aashay.</p>
+      <h1 id="hero-statement" class="hero-statement" data-reveal>
+        I build for builders<span class="accent-period">.</span>
+      </h1>
+
+      <figure class="photo photo-hero" data-reveal>
+        <img
+          src="/photos/01-hero.jpg"
+          width="1305"
+          height="870"
+          fetchpriority="high"
+          decoding="async"
+          alt="Aashay seated on a wide ochre sofa."
+        />
+      </figure>
+
+      <p class="hero-support" data-reveal>
+        I've spent close to two decades on developer platforms across engineering, partnerships, and product, and I do it today as a product manager at Meta.
+      </p>
+      <a class="cta" href="#contact" data-reveal>Let's talk</a>
+    </section>
+
+    <section id="thesis" class="thesis" aria-labelledby="thesis-heading">
+      <span class="index-label" aria-hidden="true">01</span>
+      <h2 id="thesis-heading" class="section-heading" data-reveal>Arc</h2>
+      <p data-reveal>
+        I started as an engineer in 2007, writing code and running infrastructure. From there I moved to the seam where a technical product meets the people who depend on it: developer relations, then partner engineering. I was a Forward Deployed Engineer before the title existed. Eventually I started building the platforms myself. Today I'm the product manager who owns where they go next.
+      </p>
+
+      <figure class="photo photo-thesis" data-reveal>
+        <img
+          src="/photos/02-thesis.jpg"
+          width="1365"
+          height="2048"
+          loading="lazy"
+          decoding="async"
+          alt="Aashay seated on a white Eames chair, slight smile."
+        />
+      </figure>
+    </section>
+
+    <section id="work" aria-labelledby="work-heading">
+      <span class="index-label" aria-hidden="true">02</span>
+      <h2 id="work-heading" class="section-heading" data-reveal>Selected work</h2>
+
+      <ol class="work-list">
+        <li class="work-block" data-reveal>
+          <div class="work-head">
+            <h3 class="work-title">Developer Support Platform</h3>
+            <p class="work-meta">Meta · 2024 to now</p>
+          </div>
+          <div class="work-body">
+            <p>
+              As a product manager, I pitched a better way for developers across Meta's platforms to report problems and shape what gets fixed. That better way is
+              {' '}
+              <!-- Feedback Center live link: may need removal if access changes -->
+              <a href="https://developers.meta.com/horizon/feedback" target="_blank" rel="noopener noreferrer">Feedback Center</a>: the public board where developers vote on the issues that matter. Behind it, an agentic AI layer triages incoming reports, cutting first response from hours to minutes. I secured the funding and grew it from a side project into a staffed, multi-product platform.
+            </p>
+          </div>
+        </li>
+
+        <li class="work-block" data-reveal>
+          <div class="work-head">
+            <h3 class="work-title">Presence Platform</h3>
+            <p class="work-meta">Meta · 2021 to 2024</p>
+          </div>
+          <div class="work-body">
+            <p>
+              I led third-party engagement for Meta's machine perception and AI platform for AR, VR, and MR developers. I onboarded the first wave of studios and built the developer feedback infrastructure that became the foundation for the support platform above.
+            </p>
+          </div>
+        </li>
+
+        <li class="work-block" data-reveal>
+          <div class="work-head">
+            <h3 class="work-title">Commerce Platform</h3>
+            <p class="work-meta">Meta · 2020 to 2021</p>
+          </div>
+          <div class="work-body">
+            <p>
+              I owned the roadmap for Meta's commerce APIs and developer tooling, the surfaces Shopify, BigCommerce, and WooCommerce build against. I led a cross-functional team of engineers, designers, and marketers, and I had spent the prior four years integrating these same APIs as a partner engineer before I owned them.
+            </p>
+          </div>
+        </li>
+
+        <li class="work-block" data-reveal>
+          <div class="work-head">
+            <h3 class="work-title">Partner Engineering</h3>
+            <p class="work-meta">Meta Commerce · 2016 to 2020</p>
+          </div>
+          <div class="work-body">
+            <p>
+              I was Meta's first partner engineer on commerce, embedded with the largest commerce companies in the world to ship integrations alongside their own teams. I was on the launch team for Instagram Shopping checkout, working directly with brands like Nike, Adidas, and KKW. I built Meta's automotive integrations for Marketplace, including the Kelley Blue Book, Cars.com, and Edmunds partnerships. I also built the Facebook for WooCommerce plugin, which connected millions of merchants to Facebook.
+            </p>
+          </div>
+        </li>
+
+        <li class="work-block" data-reveal>
+          <div class="work-head">
+            <h3 class="work-title">Foundations</h3>
+            <p class="work-meta">2007 to 2016</p>
+          </div>
+          <div class="work-body">
+            <p>
+              Before Meta, I did developer relations and partner engineering at Clever, the platform connecting K-12 schools to software, where I worked with Scholastic, Instructure, and Amazon. Earlier still, I ran web infrastructure at Inkling and wrote code at Salesforce, where I helped build its first REST API.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    {/* Reserved seam for Writing/Substack section. Render nothing for now. */}
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <span class="index-label" aria-hidden="true">03</span>
+      <h2 id="contact-heading" class="section-heading" data-reveal>Let's talk.</h2>
+      <p data-reveal>
+        I'm always up for a good conversation about product strategy, AI-native development, or developer platforms. I'm especially interested in the zero-to-one problem of standing one up from scratch.
+      </p>
+
+      <p class="signoff" data-reveal>Aashay Desai</p>
+
+      <p class="contact-links" data-reveal>
+        <a id="contact-email" href="#">Email</a><span class="sep" aria-hidden="true">·</span><a href="https://www.linkedin.com/in/aashaydesai/" target="_blank" rel="noopener noreferrer">LinkedIn</a><!-- GitHub link hidden: code repos no longer reflect current work. Remove the `hidden` attributes on the two elements below to restore. --><span class="sep" aria-hidden="true" hidden>·</span><a href="https://github.com/aashay" target="_blank" rel="noopener noreferrer" hidden>GitHub</a>
+      </p>
+
+      <figure class="photo photo-contact" data-reveal>
+        <img
+          src="/photos/03-contact.jpg"
+          width="1365"
+          height="2048"
+          loading="lazy"
+          decoding="async"
+          alt="Aashay on a phone call."
+        />
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p id="easter-egg" aria-live="polite">Developers, Developers, Developers!</p>
+  </footer>
+
+  <script src="../scripts/site.js"></script>
+</Base>
