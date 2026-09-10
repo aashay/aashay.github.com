@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aashay Desai - Resume</title>
 <meta name="author" content="Aashay Desai">
-<meta name="description" content="Aashay Desai, senior product manager and engineer. Close to two decades building developer platforms, AI-native systems, and APIs at Meta and beyond.">
+<meta name="description" content="Aashay Desai, senior product manager for developer platforms, developer support platforms, and AI-agent infrastructure. Nearly two decades turning developer pain points into platform products at Meta and beyond.">
 <style>
 @font-face{font-family:'SG';src:url('fonts/space-grotesk-latin-400-normal.woff2') format('woff2');font-weight:400}
 @font-face{font-family:'SG';src:url('fonts/space-grotesk-latin-500-normal.woff2') format('woff2');font-weight:500}
@@ -19,51 +19,54 @@
 :root{
   --ink:#16181A; --body:#33363A; --muted:#6A6E73; --line:#D9D7D0; --jade:#1FA98F;
 }
-html{font-family:'GE',sans-serif;color:var(--body);font-size:9.5pt;line-height:1.27;}
+html{font-family:'GE',sans-serif;color:var(--body);font-size:9.5pt;line-height:1.38;}
 
 /* header */
 .name{font-family:'SG';font-weight:700;font-size:24pt;letter-spacing:-0.025em;color:var(--ink);line-height:1;}
-.tag{font-family:'SG';font-weight:500;font-size:9.2pt;letter-spacing:0.01em;color:var(--ink);margin-top:6px;}
-.contact{font-size:8.7pt;color:var(--muted);margin-top:5px;letter-spacing:0.01em;}
+.tag{font-family:'SG';font-weight:500;font-size:9.2pt;letter-spacing:0.01em;color:var(--ink);margin-top:8px;}
+.contact{font-size:8.7pt;color:var(--muted);margin-top:6px;letter-spacing:0.01em;}
 .contact a{color:var(--muted);text-decoration:none;}
-.rule{height:2px;background:var(--jade);width:46px;margin:7px 0 0;}
+.rule{height:2px;background:var(--jade);width:46px;margin:9px 0 0;}
 
 /* sections */
-section{margin-top:5px;}
+section{margin-top:9px;}
 h2{font-family:'SG';font-weight:500;font-size:8.4pt;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink);
-   border-bottom:1px solid var(--line);padding-bottom:2px;margin-bottom:5px;}
-.summary{color:var(--ink);font-size:9.8pt;line-height:1.38;margin-right:96px;}
+   border-bottom:1px solid var(--line);padding-bottom:3px;margin-bottom:8px;}
+.summary{color:var(--ink);font-size:9.8pt;line-height:1.45;margin-right:96px;}
 
-/* experience */
-.role{margin-bottom:8px;}
+/* experience
+   Title rows are plain inline flow in source order: title, then its date, on
+   the same line with a small gap. A right-aligned date column reads fine on screen but
+   text extractors split wide gaps into separate columns and detach dates from
+   titles, which breaks ATS parsing. Keeping the date adjacent fixes that. */
+.role{margin-bottom:11px;}
 .role:last-child{margin-bottom:0;}
-.rhead{display:grid;grid-template-columns:1fr 82px;gap:14px;align-items:baseline;}
-.rhead .rdate{text-align:right;}
+.rhead{display:block;}
+.rhead .rdate{margin-left:9px;}
 .rtitle{font-family:'SG';font-weight:500;font-size:9.6pt;color:var(--ink);letter-spacing:-0.01em;}
 .rco{color:var(--muted);font-weight:400;}
 .rco::before{content:'·';margin:0 5px;color:var(--muted);}
 .rdate{font-size:8.5pt;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;}
-ul{list-style:none;margin-top:3px;margin-right:96px;}
-li{position:relative;padding-left:11px;margin-top:1.5px;line-height:1.23;}
-li::before{content:'';position:absolute;left:0;top:0.5em;width:3px;height:3px;background:var(--jade);}
+ul{list-style:none;margin-top:4px;margin-right:96px;}
+li{padding-left:11px;margin-top:2.5px;line-height:1.33;}
+li::before{content:'';display:inline-block;width:3px;height:3px;background:var(--jade);margin-left:-11px;margin-right:8px;vertical-align:0.22em;}
 b{font-weight:500;color:var(--ink);}
-.coblock{margin-bottom:9px;}
-.cohead{display:grid;grid-template-columns:1fr 82px;gap:14px;align-items:baseline;}
-.cohead .codate{text-align:right;}
+.coblock{margin-bottom:11px;}
+.cohead{display:block;}
 .coname{font-family:'SG';font-weight:700;font-size:11pt;color:var(--ink);letter-spacing:-0.015em;}
 .coloc{font-size:8.4pt;color:var(--muted);font-weight:400;margin-left:8px;}
-.codate{font-size:8.4pt;color:var(--muted);font-variant-numeric:tabular-nums;}
-.cogroup{border-left:1px solid var(--line);padding-left:12px;margin-top:4px;}
-.orglabel{font-family:'SG';font-weight:500;font-size:7.6pt;letter-spacing:0.13em;text-transform:uppercase;color:var(--jade);margin:5px 0 3px;}
+.codate{font-size:8.4pt;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;margin-left:9px;}
+.cogroup{border-left:1px solid var(--line);padding-left:12px;margin-top:6px;}
+.orglabel{font-family:'SG';font-weight:500;font-size:7.6pt;letter-spacing:0.13em;text-transform:uppercase;color:var(--jade);margin:8px 0 4px;}
 .orglabel:first-child{margin-top:0;}
-.subrole{margin-bottom:3px;}
+.subrole{margin-bottom:6px;}
 .subrole:last-child{margin-bottom:0;}
 .srtitle{font-family:'SG';font-weight:500;font-size:9.1pt;color:var(--ink);letter-spacing:-0.012em;}
-.solo{display:grid;grid-template-columns:1fr 82px;gap:14px;align-items:baseline;margin-top:6px;}
-.solo .rdate{text-align:right;}
+.solo{margin-top:8px;margin-right:96px;}
 .solo .desc{color:var(--body);} .solo b{font-weight:500;}
+.solo .rdate{font-size:inherit;}
 
-.skills{font-size:9.3pt;line-height:1.34;color:var(--body);margin-right:96px;}
+.skills{font-size:9.3pt;line-height:1.5;color:var(--body);margin-right:96px;}
 .edu{font-size:9.5pt;color:var(--body);}
 .edu b{font-weight:500;color:var(--ink);}
 
@@ -89,43 +92,43 @@ b{font-weight:500;color:var(--ink);}
 <header>
   <div class="name">Aashay Desai</div>
   <div class="tag">Senior Product Manager, Developer Platforms &nbsp;·&nbsp; former Partner Engineer and Software Engineer</div>
-  <div class="contact">aashayd@gmail.com &nbsp;·&nbsp; linkedin.com/in/aashaydesai &nbsp;·&nbsp; aashay.com</div>
+  <div class="contact">Orange County, CA &nbsp;·&nbsp; aashayd@gmail.com &nbsp;·&nbsp; linkedin.com/in/aashaydesai &nbsp;·&nbsp; aashay.com</div>
   <div class="rule"></div>
 </header>
 
 <section>
   <h2>Summary</h2>
-  <div class="summary">Close to two decades building developer platforms, APIs, and AI-native systems at scale. Zero-to-one products, millions of developers, billions in commerce revenue.</div>
+  <div class="summary">Nearly two decades turning developer pain points into platform products. Engineer, then Meta's first commerce partner engineer, now the PM who rebuilt developer support around agentic AI.</div>
 </section>
 
 <section>
   <h2>Experience</h2>
 
   <div class="coblock">
-    <div class="cohead"><div><span class="coname">Meta</span><span class="coloc">Remote · Orange County, CA</span></div><div class="codate">2016 – Present</div></div>
+    <div class="cohead"><span class="coname">Meta</span><span class="coloc">Orange County, CA</span><span class="codate">2016 – Present</span></div>
     <div class="cogroup">
 
       <div class="orglabel">Reality Labs</div>
 
       <div class="subrole">
-        <div class="rhead"><div class="srtitle">Senior Product Manager, Developer Support Platform</div><div class="rdate">2026 – Present</div></div>
+        <div class="rhead"><span class="srtitle">Senior Product Manager, Developer Support Platform</span><span class="rdate">2026 – Present</span></div>
         <ul>
-          <li>Building agentic AI systems that take every report from intake to resolution for VR and Horizon developers.</li>
-          <li>Own <b>Feedback Center</b>, from agent triage through public issue tracking.</li>
+          <li>Rebuilt <b>Feedback Center</b> as an agentic AI system: AI agents triage every developer report and route it straight to the engineers who own the fix, cutting processing from one week to three minutes and removing $500K in annual operating cost.</li>
+          <li>Building agentic AI systems that take every report from intake to resolution for VR and Horizon developers, consolidating ticketing, bug reporting, and feature requests into one platform.</li>
           <li>Lead product for agentic AI evals, measuring agent quality against real developer outcomes.</li>
         </ul>
       </div>
 
       <div class="subrole">
-        <div class="rhead"><div class="srtitle">Product Manager, Developer Support Platform</div><div class="rdate">2024 – 2026</div></div>
+        <div class="rhead"><span class="srtitle">Product Manager, Developer Support Platform</span><span class="rdate">2024 – 2026</span></div>
         <ul>
           <li>Pitched, funded, and grew Meta's developer support platform from a side project into a staffed, multi-product platform.</li>
-          <li>Launched <b>Feedback Center</b>, a public board where developers vote on platform issues, with agentic AI triage cutting first response from days to minutes; aligned 15+ cross-functional teams to ship.</li>
+          <li>Launched <b>Feedback Center</b>, a public board where developers vote on platform issues, with agentic AI triage at intake; aligned 15+ cross-functional teams to ship.</li>
         </ul>
       </div>
 
       <div class="subrole">
-        <div class="rhead"><div class="srtitle">Product Manager, Presence Platform</div><div class="rdate">2021 – 2024</div></div>
+        <div class="rhead"><span class="srtitle">Product Manager, Presence Platform</span><span class="rdate">2021 – 2024</span></div>
         <ul>
           <li>Led third-party engagement for the launch of Meta's machine perception and AI platform for AR, VR, and MR developers; onboarded 20+ game studios.</li>
         </ul>
@@ -134,17 +137,16 @@ b{font-weight:500;color:var(--ink);}
       <div class="orglabel">Commerce</div>
 
       <div class="subrole">
-        <div class="rhead"><div class="srtitle">Product Manager, Commerce Platform</div><div class="rdate">2020 – 2021</div></div>
+        <div class="rhead"><span class="srtitle">Product Manager, Commerce Platform</span><span class="rdate">2020 – 2021</span></div>
         <ul>
           <li>Owned the roadmap and backend APIs for Meta's Commerce Platform across Shopify, BigCommerce, and ChannelAdvisor, leading a 10-person team of engineers, designers, and product marketers.</li>
         </ul>
       </div>
 
       <div class="subrole">
-        <div class="rhead"><div class="srtitle">Partner Engineer, Commerce</div><div class="rdate">2016 – 2020</div></div>
+        <div class="rhead"><span class="srtitle">Partner Engineer, Commerce</span><span class="rdate">2016 – 2020</span></div>
         <ul>
-          <li>Meta's first commerce partner engineer, embedded with the world's largest commerce companies (Shopify, BigCommerce, WooCommerce) to ship integrations: the work now called Forward Deployed Engineering.</li>
-          <li>Launched Instagram Shopping onsite checkout from zero to one (Nike, Adidas, KKW), built Meta's Marketplace automotive integrations (Kelley Blue Book, Cars.com, Edmunds) and the Facebook for WooCommerce plugin connecting millions of merchants, driving billions in commerce revenue.</li>
+          <li>Served as Meta's first commerce partner engineer, embedded with Shopify, BigCommerce, and WooCommerce to ship integrations, now called Forward Deployed Engineering. Launched Instagram Shopping checkout and Marketplace automotive integrations, driving billions in commerce revenue.</li>
         </ul>
       </div>
 
@@ -152,25 +154,21 @@ b{font-weight:500;color:var(--ink);}
   </div>
 
   <div class="role">
-    <div class="rhead"><div class="rtitle">Clever <span class="rco">Developer Relations / Partner Engineer · San Francisco, CA</span></div><div class="rdate">2014 – 2016</div></div>
+    <div class="rhead"><span class="rtitle">Clever <span class="rco">Developer Relations / Partner Engineer · San Francisco, CA</span></span><span class="rdate">2014 – 2016</span></div>
     <ul>
-      <li>Technical partner and DevRel lead; shipped REST and OAuth2 integrations with Scholastic, Instructure, and Amazon serving millions of K-12 students.</li>
+      <li>Led technical partnerships and DevRel; shipped REST and OAuth2 integrations with Scholastic, Instructure, and Amazon serving millions of K-12 students.</li>
     </ul>
   </div>
 
-  <div class="solo"><div><b>Cotap</b> <span class="rco">Senior Software Engineer · San Francisco, CA</span>. <span class="desc">DevOps on AWS (EC2, S3, CloudFormation) at an enterprise messaging startup.</span></div><div class="rdate">2014</div></div>
+  <div class="solo"><b>Salesforce</b> <span class="rco">Senior Member, Technical Staff · San Francisco, CA</span> <span class="rdate">· 2008 – 2011</span>. <span class="desc">Helped build Salesforce's first REST API (Apex REST) and the Streaming API during the Force.com platform expansion.</span></div>
 
-  <div class="solo"><div><b>Inkling</b> <span class="rco">Web Operations Engineer · San Francisco, CA</span>. <span class="desc">Built and ran cloud infrastructure and deployment tooling for a digital publishing platform.</span></div><div class="rdate">2011 – 2014</div></div>
-
-  <div class="solo"><div><b>Salesforce</b> <span class="rco">Senior Member, Technical Staff · San Francisco, CA</span>. <span class="desc">Helped build Salesforce's first REST API (Apex REST) and the Streaming API during the Force.com platform expansion.</span></div><div class="rdate">2008 – 2011</div></div>
-
-  <div class="solo"><div><b>Junction Solutions</b> <span class="rco">Senior Consultant · Lincolnshire, IL</span>. <span class="desc">Technical lead on Microsoft Dynamics AX retail ERP implementations.</span></div><div class="rdate">2007 – 2008</div></div>
+  <div class="solo"><b>Earlier</b> <span class="rco">Senior Software Engineer, Cotap, 2014 · Web Operations Engineer, Inkling, 2011 – 2014 · Senior Consultant, Junction Solutions, 2007 – 2008</span></div>
 
 </section>
 
 <section>
   <h2>Skills</h2>
-  <div class="skills">Developer platforms &nbsp;·&nbsp; APIs and SDKs &nbsp;·&nbsp; platform strategy &nbsp;·&nbsp; partner and technical engagement &nbsp;·&nbsp; AI-native and agentic product &nbsp;·&nbsp; evals &nbsp;·&nbsp; developer experience &nbsp;·&nbsp; zero-to-one product &nbsp;·&nbsp; cross-functional leadership &nbsp;·&nbsp; go-to-market</div>
+  <div class="skills">Developer platforms &nbsp;·&nbsp; Developer support platforms &nbsp;·&nbsp; APIs and SDKs &nbsp;·&nbsp; Agentic AI product &nbsp;·&nbsp; Evals &nbsp;·&nbsp; Partner and technical engagement &nbsp;·&nbsp; Platform strategy</div>
 </section>
 
 <section>
